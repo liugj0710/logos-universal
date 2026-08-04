@@ -60,26 +60,26 @@
 ┌──────────────────────▼──────────────────────────────────────┐
 │  Nous 层（Dify ReAct Agent）                                │
 │  ├── Clarify Router — 问题澄清与框架提供                     │
-│  └── Hybrid Router — Fast Lane / Deep Lane 路由            │
+│  └── Hybrid Router — Fast Lane / Deep Lane 路由             │
 └──────────────────────┬──────────────────────────────────────┘
                        │
         ┌──────────────┴──────────────┐
         ▼                             ▼
-┌──────────────┐            ┌──────────────────────────────┐
-│ Fast Lane    │            │ Deep Lane · 棱镜系统         │
-│ ├─ search_memory           │ ├─ deep_query_planner        │
-│ ├─ search_dify_kb          │ ├─ deep_hybrid_retrieve        │
-│ ├─ write_ledger            │ ├─ logos_graphrag_query      │
-│ └─ 直接回答                │ └─ deep_synthesize           │
-└──────────────┘            └──────────────┬───────────────┘
+┌──────────────────┐        ┌──────────────────────────────┐
+│ Fast Lane        │        │ Deep Lane · 棱镜系统          │
+│ ├─ search_memory │        │ ├─ deep_query_planner        │
+│ ├─ search_dify_kb│        │ ├─ deep_hybrid_retrieve      │
+│ ├─ write_ledger  │        │ ├─ logos_graphrag_query      │
+│ └─ 直接回答       │        │ └─ deep_synthesize           │
+└──────────────────┘        └──────────────┬───────────────┘
                                            │
-┌──────────────────────────────────────────▼───────────────┐
-│              外部引擎（FastAPI · 机械革命）                │
-│  ├─ 检索层：Bing + 百度 + Chroma + Dify KB               │
-│  ├─ 记忆层：Ledger / Profile / Views / Policy            │
-│  ├─ 图谱层：GraphRAG（NetworkX + LLM 摘要）              │
-│  └─ 生成层：DeepSeek-V4 Pro 结构化报告                   │
-└────────────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────▼────────────────┐
+│              外部引擎（FastAPI · 机械革命）                 │
+│  ├─ 检索层：Bing + 百度 + Chroma + Dify KB                 │
+│  ├─ 记忆层：Ledger / Profile / Views / Policy              │
+│  ├─ 图谱层：GraphRAG（NetworkX + LLM 摘要）                 │
+│  └─ 生成层：DeepSeek-V4 Pro 结构化报告                      │
+└───────────────────────────────────────────────────────────┘
 ```
 
 ---
