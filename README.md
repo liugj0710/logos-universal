@@ -1,7 +1,7 @@
 # Λόγος Universal v5.0
 
 > **Λόγος**（逻各斯）— 认识论代理权驱动的认知协作系统  
-> *AI 不是替你思考，而是让你的思考更清晰。*
+> *Nous Lab presents*
 
 [![Version](https://img.shields.io/badge/version-v5.0-blue)]()
 [![Python](https://img.shields.io/badge/python-3.10%2B-blue)]()
