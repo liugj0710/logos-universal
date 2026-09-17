@@ -184,9 +184,9 @@ python wechat_bridge_v2.py
 
 | 设备 | Tailscale IP | 服务 | 端口 |
 |------|-------------|------|------|
-| 机械革命 | 100.97.236.112 | 外部引擎 / Dify / Chroma / 桥接 | 9000 / 5000 |
-| Mac Studio | 100.120.218.98 | Ollama bge-m3 / ComfyUI | 11434 |
-| 腾讯云 | 101.42.184.53 | Nginx 反向代理 | 80 / 443 |
+| 机械革命 | <windows-host-ip> | 外部引擎 / Dify / Chroma / 桥接 | 9000 / 5000 |
+| Mac Studio | <mac-host-ip> | Ollama bge-m3 / ComfyUI | 11434 |
+| 腾讯云 | <gateway-ip> | Nginx 反向代理 | 80 / 443 |
 
 ---
 
